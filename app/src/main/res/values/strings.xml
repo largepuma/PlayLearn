@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PlayLearn</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="AdMob">AdMob</string>
+    <string name="Analytics">Google Analytics</string>
+    <string name="Authentication">Google Sign-in</string>
+    <string name="Notifications">Google Cloud Messaging</string>
+    <string name="copyright"><a href="http://lxh.me">©LXH</a></string>
+
+    <string name="title_activity_display_message">My Message</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_ad_mob">AdMobActivity</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1691974257432859/3088128120</string>
+    <string name="title_activity_analytics">Analytics</string>
+    <string name="title_activity_authentication">Authentication</string>
+    <string name="title_activity_notifications">Notifications</string>
+
+    <string name="send_analytics_data">Send Analytics Data</string>
+</resources>
