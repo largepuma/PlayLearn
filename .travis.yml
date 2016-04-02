@@ -30,7 +30,15 @@ android:
 
     # Specify at least one system image,
     # if you need to run emulator(s) during your tests
-    # - sys-img-armeabi-v7a-addon-google_apis-google-$ANDROID_API_LEVEL
+    - sys-img-armeabi-v7a-addon-google_apis-google-$ANDROID_API_LEVEL
 
 before_script:
  - chmod +x gradlew
+ # Create and start emulator
+ - echo no | android create avd --force -n test -t android-$ANDROID_API_LEVEL --abi $ANDROID_ABI
+ - emulator -avd test -no-skin -no-audio -no-window &
+
+# Only run tests on the main two OneBusAway brand flavors
+script:
+  - ./wait_for_emulator
+  - ./gradlew connectedAndroidTest
